@@ -54,6 +54,7 @@ componentDidMount()
                     <span style={{marginLeft:"15px", fontWeight:"bold"}}> Email: </span><span>{item.email}</span><span style={{marginLeft:"15px", fontWeight:"bold"}}>Picture:</span><img src={item.avatar} alt="picture" height="75px" width="75px"/>
                     </div>);
             });
+            //just added a inline comments before updating state
             this.setState({userdata:finalData, headerText:response.data.support.text, headerurl:response.data.support.url});
         }
     );
